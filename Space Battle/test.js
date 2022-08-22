@@ -4,9 +4,9 @@ alert('oh hai!');
 const yourAnswer =prompt('You Want a Battle?');
 let action = null;
 
-while(action !== 'stop'){
-    action =  prompt("What do you want to do now, type Stop to stop ", "Space Battle")
-}
+//while(action !== 'stop'){
+action =  prompt("What do you want to do now, type Stop to stop ", "Space Battle")
+//}
 
 
 
@@ -53,11 +53,17 @@ let alienShipSix = {
     firepower:(Math.random() * (4 - 2 + 1)) + 2,
     accuracy:(Math.random() * (.8 - .6 + 1)) + .6,
 }
-
+//put into array ^^
 
 // Initiate the first attack
+function spaceAttack(params) {
+    
+}
 
-const firstAttack = => {
+const firstAttack = () => {
+    //fight each alien ship
+    //loop over the alien ships 
+    //some logic for the battle 
     if (spaceShip.hull >= 3 && spaceShip.hull <= 6) {
         console.log('target reached');
     
@@ -66,13 +72,10 @@ const firstAttack = => {
 
     }else if (spaceShip.firepower >= 2 && spaceShip.firepower <= 4){
         console.log('The target is completly destroyed');
-    }else (alienShipOne.hull = 20 && alienShipOne.firepower = 5 && alienShipOne.accuracy = 0.7){
+    }else if (alienShipOne.hull <= 20 && alienShipOne.firepower >= 5 && alienShipOne.accuracy <= 0.7){
         console.log('Aliens Win!');
         
     } 
 }
 
-
-for(let spaceShip.hull >= 3){
-
-}
+firstAttack()
